@@ -30,6 +30,6 @@ mkdir -p inswapper/checkpoints
 wget https://github.com/facefusion/facefusion-assets/releases/download/models/inswapper_128.onnx -O inswapper/checkpoints/inswapper_128.onnx
 
 # Setup InstantID
-mkdir -p InstantID/models/antelopev2
-wget -O InstantID/models/antelopev2/antelopev2.zip 'https://www.dropbox.com/scl/fi/cg2rr8bjvblt81atqoqyb/antelopev2.zip?rlkey=l0po8vm4p4w2b8hy2i1fstzv3&dl=1'
-unzip InstantID/models/antelopev2/antelopev2.zip -d InstantID/models/antelopev2
+mkdir -p InstantID/models
+wget -O InstantID/models/antelopev2.zip 'https://www.dropbox.com/scl/fi/cg2rr8bjvblt81atqoqyb/antelopev2.zip?rlkey=l0po8vm4p4w2b8hy2i1fstzv3&dl=1'
+unzip InstantID/models/antelopev2/antelopev2.zip
