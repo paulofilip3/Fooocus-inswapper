@@ -31,5 +31,5 @@ wget https://github.com/facefusion/facefusion-assets/releases/download/models/in
 
 # Setup InstantID
 mkdir -p InstantID/models/antelopev2
-wget -O InstantID/models/antelopev2/antelopev2.zip 'https://drive.google.com/uc?export=download&id=18wEUfMNohBJ4K3Ly5wpTejPfDzp-8fI8'
+wget -O InstantID/models/antelopev2/antelopev2.zip 'https://www.dropbox.com/scl/fi/cg2rr8bjvblt81atqoqyb/antelopev2.zip?rlkey=l0po8vm4p4w2b8hy2i1fstzv3&dl=1'
 unzip InstantID/models/antelopev2/antelopev2.zip -d InstantID/models/antelopev2
