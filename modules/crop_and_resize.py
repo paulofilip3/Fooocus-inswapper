@@ -34,7 +34,7 @@ def crop_and_resize(input_image, target_resolution):
         paste_y = (target_height - new_height) // 2
 
         # Paste the resized image onto the new image
-        resized_image.paste(input_image.resize((new_width, new_height), Image.ANTIALIAS), (paste_x, paste_y))
+        resized_image.paste(input_image.resize((new_width, new_height), Image.LANCZOS), (paste_x, paste_y))
     else:
         # Calculate the new size while preserving the aspect ratio
         if input_aspect_ratio > target_aspect_ratio:
@@ -45,7 +45,7 @@ def crop_and_resize(input_image, target_resolution):
             new_height = target_height
 
         # Resize the image
-        resized_image = input_image.resize((new_width, new_height), Image.ANTIALIAS)
+        resized_image = input_image.resize((new_width, new_height), Image.LANCZOS)
 
     # Calculate the cropping box
     left = (new_width - target_width) / 2
